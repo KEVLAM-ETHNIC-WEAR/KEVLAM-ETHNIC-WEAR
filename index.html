@@ -376,7 +376,183 @@
         }
 
         /* Philosophy */
-        .philosophy {
+               /* About Us */
+        .about-us {
+            background: var(--navy-deep);
+            position: relative;
+        }
+
+        .about-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .about-intro {
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+
+        .about-lead {
+            font-size: 1.4rem;
+            line-height: 1.8;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
+
+        .about-intro p {
+            font-size: 1.05rem;
+            line-height: 1.9;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            font-weight: 300;
+        }
+
+        .why-choose {
+            margin-top: 4rem;
+        }
+
+        .why-choose h3 {
+            text-align: center;
+            font-size: 2.2rem;
+            color: var(--gold);
+            margin-bottom: 3rem;
+            font-weight: 400;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+            margin-bottom: 4rem;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 2.5rem 1.5rem;
+            background: var(--navy-royal);
+            border: 1px solid rgba(212, 175, 55, 0.1);
+            transition: all 0.4s ease;
+            position: relative;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(to right, transparent, var(--gold), transparent);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .feature-card:hover {
+            border-color: rgba(212, 175, 55, 0.3);
+            transform: translateY(-5px);
+            background: rgba(30, 39, 73, 0.8);
+        }
+
+        .feature-card:hover::before {
+            opacity: 1;
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--gold);
+            border-radius: 50%;
+            color: var(--gold);
+            transition: all 0.4s ease;
+        }
+
+        .feature-card:hover .feature-icon {
+            background: var(--gold);
+            color: var(--navy-deep);
+            transform: rotate(360deg);
+        }
+
+        .feature-icon svg {
+            width: 28px;
+            height: 28px;
+        }
+
+        .feature-card h4 {
+            font-size: 1.3rem;
+            color: var(--cream);
+            margin-bottom: 1rem;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .feature-card p {
+            color: var(--text-muted);
+            line-height: 1.7;
+            font-size: 0.95rem;
+            font-weight: 300;
+        }
+
+        .about-cta {
+            text-align: center;
+            padding: 3rem 2rem;
+            background: linear-gradient(135deg, var(--navy-light) 0%, var(--navy-royal) 100%);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            position: relative;
+            margin-top: 3rem;
+        }
+
+        .about-cta::before,
+        .about-cta::after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border: 1px solid var(--gold);
+        }
+
+        .about-cta::before {
+            top: -1px;
+            left: -1px;
+            border-right: none;
+            border-bottom: none;
+        }
+
+        .about-cta::after {
+            bottom: -1px;
+            right: -1px;
+            border-left: none;
+            border-top: none;
+        }
+
+        .cta-text {
+            font-size: 1.3rem;
+            color: var(--text-light);
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+        }
+
+        /* Responsive About Us */
+        @media (max-width: 968px) {
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .about-lead {
+                font-size: 1.2rem;
+            }
+
+            .about-intro p {
+                font-size: 1rem;
+            }
+        }
+
+        /* Philosophy */
+        .philosophy { .philosophy {
             background: var(--navy-royal);
             position: relative;
         }
