@@ -375,8 +375,7 @@
             font-weight: 300;
         }
 
-        /* Philosophy */
-               /* About Us */
+        /* About Us */
         .about-us {
             background: var(--navy-deep);
             position: relative;
@@ -535,24 +534,8 @@
             font-style: italic;
         }
 
-        /* Responsive About Us */
-        @media (max-width: 968px) {
-            .features-grid {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-
-            .about-lead {
-                font-size: 1.2rem;
-            }
-
-            .about-intro p {
-                font-size: 1rem;
-            }
-        }
-
         /* Philosophy */
-        .philosophy { .philosophy {
+        .philosophy {
             background: var(--navy-royal);
             position: relative;
         }
@@ -940,7 +923,7 @@
             font-size: 0.8rem;
         }
 
-        /* Mobile Responsive */
+        /* Mobile Responsive adjustments */
         @media (max-width: 968px) {
             .nav-links {
                 position: fixed;
@@ -967,7 +950,8 @@
 
             .philosophy-grid,
             .grooms-content,
-            .contact-grid {
+            .contact-grid,
+            .features-grid {
                 grid-template-columns: 1fr;
             }
 
@@ -999,6 +983,7 @@
         </a>
         
         <ul class="nav-links" id="navLinks">
+            <li><a href="#about">About</a></li>
             <li><a href="#philosophy">Our Vision</a></li>
             <li><a href="#collections">Collections</a></li>
             <li><a href="#grooms">For Grooms</a></li>
@@ -1032,6 +1017,77 @@
         </div>
     </section>
 
+    <!-- About Us -->
+    <section class="about-us" id="about">
+        <div class="section-header">
+            <h2>About Us</h2>
+            <p>Crafting excellence from India's textile capital</p>
+        </div>
+
+        <div class="about-content">
+            <div class="about-intro">
+                <p class="about-lead">
+                    Welcome to <span style="color: var(--gold); font-family: 'Playfair Display', serif;">Kevalam Ethnic Wear</span>, where rich Indian heritage meets modern craftsmanship.
+                </p>
+                <p>
+                    Based in Surat, the textile hub of India, we are a leading manufacturer specializing in premium Sherwanis, Indo-Western wear, Jodhpuri suits, and a comprehensive range of high-quality garment fabrics. From intricate, custom embroidery to cutting-edge textile designs, we blend traditional craftsmanship with state-of-the-art manufacturing to deliver exceptional style, structure, and elegance.
+                </p>
+                <p>
+                    We pride ourselves on sourcing the finest materials and utilizing precision production techniques to create standout attire for the modern groom and fashion-forward individuals.
+                </p>
+            </div>
+
+            <div class="why-choose">
+                <h3>Why Choose Us?</h3>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <h4>Surat's Finest Craftsmanship</h4>
+                        <p>Leveraging the unparalleled textile heritage of India's fabric capital to deliver premium quality.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                <line x1="9" y1="9" x2="15" y2="15"/>
+                                <line x1="15" y1="9" x2="9" y2="15"/>
+                            </svg>
+                        </div>
+                        <h4>Diverse Portfolio</h4>
+                        <p>Expertly manufacturing everything from regal heritage wear like Jodhpuris to contemporary asymmetrical Indo-Western silhouettes.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                                <line x1="12" y1="17" x2="12.01" y2="17"/>
+                            </svg>
+                        </div>
+                        <h4>Design Excellence</h4>
+                        <p>A strong focus on detailed textures, premium fabrications, and clean, sophisticated tailoring that sets your wardrobe apart.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-cta">
+                <p class="cta-text">Ready to experience the Kevalam difference?</p>
+                <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; margin-top: 1.5rem;">
+                    <a href="#collections" class="btn btn-primary">Explore Collections</a>
+                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Philosophy -->
     <section class="philosophy" id="philosophy">
         <div class="philosophy-grid">
@@ -1055,7 +1111,7 @@
     <section id="collections">
         <div class="section-header">
             <h2>The Collections</h2>
-            <p>Three distinct expressions of masculine elegance, designed for celebrations that matter.</p>
+            <p>Three distinct expressions of wedding elegance, designed for celebrations that matter.</p>
         </div>
         
         <div class="collections-grid">
@@ -1119,7 +1175,6 @@
     </section>
 
     <!-- Contact -->
-        <!-- Contact -->
     <section id="contact">
         <div class="section-header">
             <h2>Get in Touch</h2>
@@ -1216,63 +1271,15 @@
             </iframe>
         </div>
     </section>
+
     <!-- Footer -->
     <footer>
         <div class="footer-logo">KEVALAM</div>
         <div class="footer-tagline">ETHNIC WEAR</div>
-        <p class="footer-copy"> Kevalam Ethnic Wear. All rights reserved.</p>
+        <p class="footer-copy">© 2024 Kevalam Ethnic Wear. All rights reserved. | GST: 24ALWPC9813A2Z6</p>
     </footer>
 
-    <script>
-        // Navbar scroll effect
-        const navbar = document.getElementById('navbar');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
-
-        // Mobile menu toggle
-        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const navLinks = document.getElementById('navLinks');
-        
-        mobileMenuBtn.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-
-        // Close mobile menu on link click
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-            });
-        });
-
-        // Intersection Observer for fade-in animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        // Observe section headers and cards
-        document.querySelectorAll('.section-header, .collection-card, .philosophy-text, .grooms-text, .contact-info, .contact-form').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(30px)';
-            el.style.transition = 'all 0.8s ease';
-            observer.observe(el);
-        });
-    </script>
-        <!-- WhatsApp Floating Button -->
+    <!-- WhatsApp Floating Button -->
     <a href="https://wa.me/917041035353?text=Hello%20Kevalam%20Ethnic%20Wear,%20I'm%20interested%20in%20your%20collection" 
        class="whatsapp-float" 
        target="_blank"
@@ -1329,7 +1336,54 @@
         }
     </style>
 
-</body>
-</html>
+    <script>
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements
+        document.querySelectorAll('.section-header, .collection-card, .philosophy-text, .grooms-text, .contact-info, .contact-form, .about-intro, .feature-card, .about-cta').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.8s ease';
+            observer.observe(el);
+        });
+    </script>
 </body>
 </html>
